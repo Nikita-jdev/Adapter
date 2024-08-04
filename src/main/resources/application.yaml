@@ -1,0 +1,16 @@
+server:
+  serviceA_version: /api/v1/message
+  serviceB:
+    host: #адрес сервисаБ
+    version: /api/v1/currentTemp
+
+gismeteo:
+  head_name: X-Gismeteo-Token
+  token: 56b30cb255.3443075
+  host: https://api.gismeteo.net/v2/weather/current
+  txt: "some message"
+
+async:
+  corePoolSize: 10
+  maxPoolSize: 15
+  queueCapacity: 1000
